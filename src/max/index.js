@@ -7,7 +7,13 @@
 * max([-1, 0]);   // 0
 */
 const max = arr => {
-  /* your logic here...*/
+  
+  let max = arr[0];
+  let len=arr.length;
+  for (i=0; i < len; i++) {
+    if (arr[i] > max) max = arr[i];
+  }
+  return max;
 };
 
 export default max;
